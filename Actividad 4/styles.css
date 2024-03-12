@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+header {
+
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+header h1 {
+
+    font-size: 4rem;
+}
+
+.containerAll {
+
+    width: 90%;
+    margin: auto;
+}
+
+body h2 {
+
+    background-color: aquamarine;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.bodyList {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.bodyList .question {
+
+    width: 25%;
+    height: 200px;
+    background-color: aquamarine;
+    border-radius: 4rem;
+    padding: 3rem;
+}

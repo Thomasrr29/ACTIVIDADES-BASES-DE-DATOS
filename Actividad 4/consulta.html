@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consultas base de datos</title>
+</head>
+<body>
+
+    <div class="containerAll">
+        <header>
+            <h1>CONSULTA BASE DE DATOS</h1>
+        </header>
+    
+        <div class="text">
+            <h2>LAS VIEWS</h2>
+            <p>Las vistas en MySQL son consultas SQL predefinidas almacenadas en la base de datos como objetos virtuales. 
+                Permiten a los usuarios acceder a conjuntos específicos de datos de manera conveniente y consistente, 
+                sin la necesidad de acceder directamente a las tablas subyacentes. </p>
+        </div>
+    
+        <div class="text">
+            <h2>Procedimientos Almacenados:</h2>
+            <p>Los procedimientos almacenados en MySQL son secuencias de comandos SQL que se almacenan en el servidor de la base de datos 
+                y pueden ser invocados y ejecutados mediante una llamada desde una aplicación o una consulta SQL. Son como un tipo de función</p>   
+        </div>
+    
+        <div class="lista">
+            <div class="head">
+                <h2>Diferencias entre NoSQL y MySQL</h2>
+            </div>
+    
+            <div>
+                <ul class="bodyList">
+                    <div class="question">
+                        <h3>Modelo de Datos:</h3>
+                        <li>MySQL utiliza un modelo relacional basado en tablas.</li>
+                        <li>NoSQL utiliza diversos modelos de datos como documentos, clave-valor, columnares o de grafos.</li>
+                    </div>
+    
+                    <div class="question">
+                        <h3>Esquema:</h3>
+                        <li>MySQL tiene un esquema fijo y predefinido.</li>
+                        <li>NoSQL puede tener un esquema dinámico o flexible.</li>
+                    </div>
+    
+                    <div class="question">
+                        <h3>Escalabilidad:</h3>
+                        <li>MySQL puede ser más difícil de escalar horizontalmente.</li>
+                        <li>NoSQL es más fácil de escalar horizontalmente para manejar grandes volúmenes de datos.</li>
+                    </div>
+    
+                    <div class="question">
+                        <h3>Consultas y Transacciones:</h3>
+                        <li>MySQL utiliza SQL para consultas y admite transacciones ACID.</li>
+                        <li>NoSQL utiliza interfaces específicas y puede no admitir transacciones ACID.</li>
+                    </div>
+                    
+                    <div class="question">
+                        <h3>Flexibilidad y Agilidad:</h3>
+                        <li>MySQL puede ser rígido en cuanto a cambios en el esquema.</li>
+                        <li>NoSQL ofrece más flexibilidad y agilidad para cambios en la estructura de los datos.</li>
+                    </div>
+
+                    <div class="question">
+                        <h3>Flexibilidad y Agilidad:</h3>
+                        <li>MySQL puede ser rígido en cuanto a cambios en el esquema.</li>
+                        <li>NoSQL ofrece más flexibilidad y agilidad para cambios en la estructura de los datos.</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="texto">
+            <h2>¿Que es MongoDB?</h2>
+            <p>
+                MongoDB es una base de datos NoSQL que utiliza un modelo de datos basado en documentos JSON.
+                 Es altamente escalable y flexible, permitiendo almacenar y consultar datos de 
+                 forma eficiente en estructuras de documentos jerárquicas. MongoDB se destaca por 
+                 su capacidad para manejar grandes volúmenes de datos, su facilidad de escalabilidad 
+                 horizontal y su esquema flexible que permite adaptarse fácilmente a cambios en los requisitos 
+                 de las aplicaciones.</p>
+        </div>
+
+        <div class="ejercicios">
+            <div class="block">
+                <h3> Realizar un Listar en MongoDB </h3>
+                <code> const users = users.find() </code>
+            </div>
+            <div class="block">
+                <h3> Realizar un Actualizar en MongoDB </h3>
+                <code> const cambio = users.updateOne({modelo: "Porsche 2019"}, {$set: {modelo: "Audi RS6"}}) </code>
+            </div>
+            <div class="block">
+                <h3> Realizar un Eliminar en MongoDB </h3>
+                <code> const eliminar = users.deleteOne({id: {$gte: 20}}) </code>
+            </div>
+            <div class="block">
+                <h3> Realizar una Inserción en MongoDB </h3>
+                <code> const resultado = users.insertOne({nombre: "Thomas", edad: 20, grupo: "Van Rossem"}) </code>
+            </div>
+            
+        </div>
+    </div>
+   
+</body>
+</html>
